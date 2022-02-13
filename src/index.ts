@@ -1,3 +1,8 @@
-import run from "./exam";
+import app, { startExpressServer } from "./express";
+import graphqlServer from "./apollo";
 
-run();
+startExpressServer();
+
+graphqlServer.start().then(() => {
+  graphqlServer.applyMiddleware({ app });
+});
