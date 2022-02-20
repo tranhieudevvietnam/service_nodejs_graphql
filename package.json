@@ -20,6 +20,7 @@
     "@types/express": "^4.17.13",
     "@types/graphql-upload": "^8.0.10",
     "@types/jsonwebtoken": "^8.5.8",
+    "@types/lodash": "^4.14.178",
     "@types/morgan": "^1.9.3",
     "@types/node": "^17.0.17",
     "nodemon": "^2.0.15",
@@ -29,6 +30,7 @@
   },
   "dependencies": {
     "apollo-server-express": "^3.6.3",
+    "autoloader-ts": "^2.2.1",
     "body-parser": "^1.19.1",
     "config": "^3.3.7",
     "cors": "^2.8.5",
@@ -37,7 +39,7 @@
     "graphql": "^16.3.0",
     "graphql-upload": "^13.0.0",
     "jsonwebtoken": "^8.5.1",
-    "khong-dau": "^2.0.0",
+    "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "mongoose": "^6.2.1",
     "morgan": "^1.10.0"
