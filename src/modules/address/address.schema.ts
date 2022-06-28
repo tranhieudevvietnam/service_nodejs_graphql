@@ -1,23 +1,22 @@
 import { gql } from "apollo-server-express";
-import { type } from "os";
 
 export default gql`
   extend type Query {
     getProvince: [Province]
-    getDistrict(provinceId: ID!): [District]
-    getWard(districtId: ID!): [Ward]
+    getDistrict(provinceId: String!): [District]
+    getWard(districtId: String!): [Ward]
   }
-
   type Province {
     id: ID!
-    name: String
+    name: String!
+    view: Int
   }
   type District {
     id: ID!
-    name: String
+    name: String!
   }
   type Ward {
     id: ID!
-    name: String
+    name: String!
   }
 `;
